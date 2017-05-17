@@ -1,57 +1,106 @@
-* {
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
 	font-family: "Noto Serif";
 }
-.header {
+
+header {
 	text-align: center;
-	border: solid;
-	border-width: 4px 0 1px 0;
+	border-top: 4px solid black;
+	padding: 0;
+	margin: 20px 20px 0 20px;
 }
 
-.profile {
-	width:40%;
+main {
+	margin: 0 40px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+div.profile {
+	width:50%;
 	float: left;
-	padding: 7.5% 0 7.5% 10%;
+	/*display: inline-block;*/
+	/*padding: 7.5% 0 7.5% 10%;*/
+	padding: 70px 20px 70px 70px;
 }
 
-.picframe {
-	width: 40%;
-	float: right;
-	padding: 5%;
-	border-radius: 50px;
+div.picframe {
+	width: 50%;
+	float: left;
+	/*display: inline-block;*/
+	padding: 70px 70px 70px 20px;
+	border-radius: 30px;
 }
 
-.statement {
+div.picframe img {
+	width: 100%;
+}
+
+div.experience, div.education {
+	width: 80%;
+	margin: 10px auto;
+}
+
+h3 .statement {
 	font-family: "Patua One";
 	font-size: 24px;
 	line-height: 4;
 	text-transform: uppercase;
 }
 
-.expic {
+img.expic {
 	width: 90%;
 	margin: 5%;
 	clear: both;
 }
 
-.jobtitle {
+nav ul {
+	padding: 0;
+}
+
+ul.explist {
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+li {
+	display: inline;
+	margin: 0;
+}
+
+li .jobtitle {
 	font-size: 24px;
 }
 
-.jobduration {
+li .jobduration {
 	font-family: "PT Sans Caption";
 }
 
-.experience {
-	width: 80%;
-	margin: 10px auto;
+li.expchunk {
+	display: block;
 }
 
-.footer {
+li.edu {
+	display: block;
+	line-height: 3;
+}
+
+.clearfloat {
 	clear: both;
+}
+
+footer {
+	/*clear: both;*/
 	text-align: center;
 	padding: 10px;
-	border-top: solid;
-	border-top-width: 1px;
 }
 
 h1 {
@@ -70,23 +119,38 @@ nav {
 	padding: 20px auto;
 }
 
-ul.explist {
-	list-style-type: square;
-	list-style-position: inside;
+nav li:first-child {
+	border-right: .5px solid black;
+	padding-right: 5px;
 }
 
-li {
-	display: inline;
+nav li:last-child {
+	border-left: .5px solid black;
+	padding-left: 5px;
 }
 
-li.expchunk {
-	display: block;
+footer li:nth-child(1) {
+	border-right: .5px solid black;
+	padding-right: 5px;
 }
 
-li.edu {
-	display: block;
-	line-height: 3;
+footer li:nth-child(2) {
+	border-width: 0 .5px;
+	padding: 0 5px;
+	border-style: solid;
 }
+
+footer li:nth-child(3) {
+	border-width: 0 .5px;
+	padding: 0 5px;
+	border-style: solid;
+}
+
+footer li:nth-child(4) {
+	border-left: .5px solid black;
+	padding-left: 5px;
+}
+
 
 a {
 	font-family: "Noto Serif";
