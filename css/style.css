@@ -24,23 +24,22 @@ main {
 	border-bottom: 1px solid black;
 }
 
-div.profile {
-	width:50%;
+div .profile {
+	/*width:50%;
 	float: left;
 	/*display: inline-block;*/
 	/*padding: 7.5% 0 7.5% 10%;*/
-	padding: 70px 20px 70px 70px;
+	padding: 50px;
 }
 
-div.picframe {
-	width: 50%;
+div .picframe {
+	/*width: 50%;
 	float: left;
 	/*display: inline-block;*/
-	padding: 70px 70px 70px 20px;
-	border-radius: 30px;
+	padding: 74px;
 }
 
-div.picframe img {
+div img {
 	width: 100%;
 }
 
@@ -49,10 +48,12 @@ div.experience, div.education {
 	margin: 10px auto;
 }
 
-h3 .statement {
+/* Force the next column to have the height of the previous one*/
+
+h3 .statement, h4 .statement {
 	font-family: "Patua One";
 	font-size: 24px;
-	line-height: 4;
+	line-height: 3;
 	text-transform: uppercase;
 }
 
@@ -76,11 +77,11 @@ li {
 	margin: 0;
 }
 
-li .jobtitle {
-	font-size: 24px;
+h4 .jobtitle {
+	font-size: 18px;
 }
 
-li .jobduration {
+h4 .jobduration {
 	font-family: "PT Sans Caption";
 }
 
@@ -106,10 +107,11 @@ footer {
 h1 {
 	font-family: "Noto Serif";
 	font-size: 72px;
-	margin:30px 0 auto;
+	margin:30px 0 20px 0;
 }
 
-h3 {
+h3, h4 {
+	margin: 0;
 	font-family: "Noto Serif";
 	line-height: 2;
 }

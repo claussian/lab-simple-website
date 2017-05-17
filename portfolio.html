@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Bootstrap core CSS -->
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif|Patua+One|PT+Sans+Caption" rel="stylesheet">
 	<title>Joe Johnson</title>
@@ -11,37 +13,42 @@
 		<nav class="about">
 			<ul>
 				<li><a href="index.html">About Me</a></li><!--
-			--><li><a href="portfolio.html">Portfolio</a></li>
+			 --><li><a href="portfolio.html">Portfolio</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<div class="experience">
-			<h3><span class="statement">Experience</span><br>
-			I recently graduated from a Front-End Web Development course at General Assembly where I learned HTML, CSS, JavaScript, jQuery and how to be an awesome Front-End Web Developer! During my spare time, I enjoy senior water aerobics, pickling, and spending time with my goldfish, Jerry.</h3>
-			<h3><span class="statement">Portfolio</span></h3>
-			<ul class="explist">
-				<li class="expchunk"><span class="jobtitle">Web Developer, Relaxr</span> | <span class="jobduration">2015 - present</span><br>
-					<p>Developed a multi-column layout blog, landing page, and contact forms that render on mobile devices.</p>
-					<img src="images/relaxr-deliverable.png" class="expic">
-				</li>
-				<li class="expchunk"><span class="jobtitle">Web Developer, Startup Matchmaker</span> | <span class="jobduration">2015 - present</span><br>
-					<p>Used a design team's wireframes to develop this company's responsive homepage.</p>
-					<img src="images/startup-matchmaker-deliverable.png" class="expic">
-				</li>
-				<li class="expchunk"><span class="jobtitle">Web Developer, CitiPix</span> | <span class="jobduration">2015 - present</span><br>
-					<p>Built web app prototype that allows users to store and quickly retrieve photos using keywords.</p>
-					<img src="images/citipix-deliverable.png" class="expic">
-				</li>
-			</ul>
-		</div>
-		<div class="education">
-			<h3><span class="statement">Education</span></h3>
-			<ul>
-				<li class="edu">General Assembly — FEWD 2015</li>
-				<li class="edu">College of Soft Knocks — B.S. 2009</li>
-				<li class="edu">School of Hard Knocks — 2005 (Honors)</li>
-			</ul>
+	<main class="container">
+		<div class="row">
+			<div class="container experience">
+				<div class="row">
+					<h4><span class="statement">Experience</span><br>
+					I recently graduated from a Front-End Web Development course at General Assembly where I learned HTML, CSS, JavaScript, jQuery and how to be an awesome Front-End Web Developer! During my spare time, I enjoy senior water aerobics, pickling, and spending time with my goldfish, Jerry.</h4>
+					<h4><span class="statement">Portfolio</span></h4>
+					<div class="col-md-4 expchunk">
+						<h4><span class="jobtitle">Web Developer, Relaxr</span> | <span class="jobduration">2015 - present</span></h4><br>
+						<p>Developed a multi-column layout blog, landing page, and contact forms that render on mobile devices.</p>
+						<img src="images/relaxr-deliverable.png">
+					</div>
+					<div class="col-md-4 expchunk">
+						<h4><span class="jobtitle">Web Developer, Startup Matchmaker</span> | <span class="jobduration">2015 - present</span></h4><br>
+						<p>Used a design team's wireframes to develop this company's responsive homepage.</p>
+						<img src="images/startup-matchmaker-deliverable.png">
+					</div>
+					<div class="col-md-4 expchunk">
+						<h4><span class="jobtitle">Web Developer, CitiPix</span> | <span class="jobduration">2015 - present</span></h4><br>
+						<p>Built web app prototype that allows users to store and quickly retrieve photos using keywords.</p>
+						<img src="images/citipix-deliverable.png">
+					</div>
+				</div>
+			</div>
+			<div class="education">
+				<h3><span class="statement">Education</span></h3>
+				<ul>
+					<li class="edu">General Assembly — FEWD 2015</li>
+					<li class="edu">College of Soft Knocks — B.S. 2009</li>
+					<li class="edu">School of Hard Knocks — 2005 (Honors)</li>
+				</ul>
+			</div>
 		</div>
 	</main>
 	<footer>
