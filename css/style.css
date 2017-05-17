@@ -1,0 +1,102 @@
+* {
+	font-family: "Noto Serif";
+}
+.header {
+	text-align: center;
+	border: solid;
+	border-width: 4px 0 1px 0;
+}
+
+.profile {
+	width:40%;
+	float: left;
+	padding: 7.5% 0 7.5% 10%;
+}
+
+.picframe {
+	width: 40%;
+	float: right;
+	padding: 5%;
+	border-radius: 50px;
+}
+
+.statement {
+	font-family: "Patua One";
+	font-size: 24px;
+	line-height: 4;
+	text-transform: uppercase;
+}
+
+.expic {
+	width: 90%;
+	margin: 5%;
+	clear: both;
+}
+
+.jobtitle {
+	font-size: 24px;
+}
+
+.jobduration {
+	font-family: "PT Sans Caption";
+}
+
+.experience {
+	width: 80%;
+	margin: 10px auto;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	padding: 10px;
+	border-top: solid;
+	border-top-width: 1px;
+}
+
+h1 {
+	font-family: "Noto Serif";
+	font-size: 72px;
+	margin:30px 0 auto;
+}
+
+h3 {
+	font-family: "Noto Serif";
+	line-height: 2;
+}
+
+nav {
+	margin: 10px auto;
+	padding: 20px auto;
+}
+
+ul.explist {
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+li {
+	display: inline;
+}
+
+li.expchunk {
+	display: block;
+}
+
+li.edu {
+	display: block;
+	line-height: 3;
+}
+
+a {
+	font-family: "Noto Serif";
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
